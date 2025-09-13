@@ -1,0 +1,37 @@
+{
+  "name": "mern-fullstack-app",
+  "version": "1.0.0",
+  "description": "Full-stack MERN application with TypeScript",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "build": "npm run build:server && npm run build:client",
+    "build:server": "cd backend && npm run build",
+    "build:client": "cd frontend && npm run build",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "start": "cd backend && npm start",
+    "test": "cd backend && npm test && cd ../frontend && npm test"
+  },
+  "keywords": [
+    "mern",
+    "typescript",
+    "react",
+    "express",
+    "mongodb",
+    "jwt",
+    "zustand",
+    "shadcn"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "backend": "^0.0.0",
+    "googleapis": "^159.0.0"
+  }
+}

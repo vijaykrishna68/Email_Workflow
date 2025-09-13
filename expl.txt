@@ -1,0 +1,69 @@
+This is an open technical assessment created by tryCoM AI.
+
+You need to build a **Custom Email Workflow Tool** that reads Gmail and suggests replies with priority scoring and calendar scheduling capabilities. The tool should have the following functionalities:
+
+- **Email Integration**: Integrate with Gmail API to read incoming emails using OAuth 2.0 authentication
+- **AI-Powered Analysis**: Generate reply suggestions and classify emails with priority scores (spam, neutral, urgent)
+- **Calendar Integration**: Connect with Google Calendar API for intelligent meeting scheduling with timezone handling
+- **MERN Stack**: Use MongoDB for data storage, Express.js for backend API, React.js for frontend, and Node.js for server
+- **Authentication**: Implement secure Gmail and Calendar API access with proper error handling
+- **Responsive UI**: Build a dashboard with email management, reply interface, and calendar integration
+- **Smart Scheduling**: Automatically detect calendar requests, check availability, and suggest alternative times in customer's timezone when conflicts exist
+
+## **Technical Requirements**
+
+- Use **React.js** with hooks and modern patterns  `(TypeScript mandatory)`
+- Use **MongoDB** for storing emails, user data, and settings with proper schema design
+- Use **Express.js** for RESTful API with JWT/Firebase authentication  `(TypeScript mandatory)`
+- Implement **real-time updates** for new emails
+- Include **timezone handling** for international scheduling
+- Add **error handling** and **loading states** throughout the application
+
+## **Deliverables**
+
+- Working application deployed on cloud platform (Heroku, Vercel, etc.)
+- Complete documentation in README.md with setup instructions
+- API documentation with endpoint descriptions
+- Clean, documented code with meaningful Git commit history
+
+## Code Structure
+
+Follow **SOLID principles** and keep structure consistent:
+
+- Follow the **MVC controller pattern** for clear separation of concerns
+- Separate controllers for handling requests
+- Define routes independently from logic
+- Keep business rules inside services
+- Store database schemas and persistence logic apart from services
+- Define strict types and interfaces (avoid `any`, `unknown`, and `never`)
+- Place reusable utilities and helpers in a single location
+- Use middleware for auth, validation, and error handling
+- Keep real-time socket handlers distinct from REST endpoints
+- Store config and environment setup in a dedicated place
+
+On the frontend:
+
+- Group features with their own pages and components
+- usage of Shadcn Components and Lucide Icons are mandatory.
+- Build reusable, stateless UI components
+- Use hooks for data fetching, state management, and side effects
+- Encapsulate API calls in dedicated service functions
+- Manage global state with **Zustand** (preferred)
+- Keep utility functions pure and independent
+- Define strict types and interfaces (avoid `any`, `unknown`, and `never`)
+
+You have `4 **days**` to complete this assessment. Please send us the:
+
+- **Deployed link**,
+- **API docs link**, and
+- **GitHub repo** for review.
+
+## **Bonus Features (Added points)**
+
+- Email templates for common responses
+- Advanced filtering and search capabilities
+- Mobile responsiveness
+- Dark/light theme toggle
+- Comprehensive testing suite
+
+Let us know if you have any questions.
